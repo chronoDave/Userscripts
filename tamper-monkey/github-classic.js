@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name            GitHub Classic
-// @version         1.0
+// @version         1.0.1
 // @description     CSS injector to replicate pre June 2020 styling.
 // @author          Chronocide
 // @match           https://github.com/*
 // @run-at          document-body
+// @updateURL       https://raw.githubusercontent.com/chronoDave/user-scripts/master/tamper-monkey/github-classic.js
+// @downloadURL     https://raw.githubusercontent.com/chronoDave/user-scripts/master/tamper-monkey/github-classic.js
 // ==/UserScript==
 
 // Helper
