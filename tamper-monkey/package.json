@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0"
+  }
+}
