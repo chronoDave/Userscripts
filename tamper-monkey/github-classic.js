@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            GitHub Classic
-// @version         1.0.1
+// @version         1.1
 // @description     CSS injector to replicate pre June 2020 styling.
 // @author          Chronocide
 // @match           https://github.com/*
