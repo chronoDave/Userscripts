@@ -9,25 +9,24 @@
 // @downloadURL     https://raw.githubusercontent.com/chronoDave/user-scripts/master/tamper-monkey/github-classic.js
 // ==/UserScript==
 
-// Helper
-function toArray(any) {
-  return Array.isArray(any) ? any : [any];
-}
-function appendStyle(node, styles) {
+// Utils
+const toArray = any => (Array.isArray(any) ? any : [any]);
+const appendStyle = (node, styles) => {
   if (node) {
     const style = node.style.cssText;
     node.setAttribute('style', `${style}; ${toArray(styles).join('; ')}`);
   }
-}
-function setStyle(selector, styles) {
-  appendStyle(document.querySelector(selector), styles);
-}
-function setStyleAll(selector, styles) {
+};
+const setStyle = (selector, styles) => appendStyle(
+  document.querySelector(selector),
+  styles
+);
+const setStyleAll = (selector, styles) => {
   const nodes = document.querySelectorAll(toArray(selector).join());
   for (let i = 0, l = nodes.length; i < l; i += 1) {
     appendStyle(nodes[i], styles);
   }
-}
+};
 
 // Main
 const main = () => {
