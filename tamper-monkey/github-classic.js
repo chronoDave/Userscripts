@@ -71,6 +71,7 @@ const main = () => {
   // Content
   setStyleAll('.Box-row', 'border-bottom: 1px solid #e1e4e8 !important');
   setStyleAll('.Box-row .flex-auto span a', 'color: #0366d6 !important');
+  setStyleAll('.IssueLabel', 'color: #fff !important'); // Override Issue Label
   setStyle('div.Box-row:last-of-type', 'border: initial !important');
   setStyle('.Box-header--blue', 'padding: 8px 12px !important');
 
