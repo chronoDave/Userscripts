@@ -50,7 +50,6 @@ WEBHOOK_DATA='{
 }'
 
 curl --fail \
-	--progress-bar \
 	-A "GitHubActions-Webhook" \
 	-H Content-Type:application/json \
 	-H X-Author:Chronocide#5250 \
