@@ -26,12 +26,15 @@ COMMIT_DESCRIPTION="$(git log -1 --pretty=%b)"
 WEBHOOK_DATA='{
   "embeds": [{
 	"author": {
-		"name": "'$STATUS' - '$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$GITHUB_ACTION')",
+		"name": "'$STATUS' - '$GITHUB_REPOSITORY'",
 		"url": "'$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'/actions/runs/'$GITHUB_RUN_ID'",
 		"icon_url": "https://i.imgur.com/Z3lo7tA.png"
 	},
 	"title": "'$COMMIT_TITLE'",
 	"description": "'$COMMIT_DESCRIPTION'",
+  "footer": {
+    "text": "'$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$GITHUB_ACTION')"
+  },
 	"thumbnail": {
 		"url": "'$AVATAR'"
 	},
