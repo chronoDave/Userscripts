@@ -54,4 +54,4 @@ curl --fail \
 	-A "GitHubActions-Webhook" \
 	-H Content-Type:application/json \
 	-H X-Author:Chronocide#5250 \
-	-d "${WEBHOOK_DATA}" "${WEBHOOK_URL}" \
+	-d "$WEBHOOK_DATA" "$WEBHOOK_URL" \
