@@ -33,7 +33,7 @@ WEBHOOK_DATA='{
 	"title": "'$COMMIT_TITLE'",
 	"description": "'$COMMIT_DESCRIPTION'",
   "footer": {
-    "text": "'$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$GITHUB_ACTION')"
+    "text": "'$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$2')"
   },
 	"thumbnail": {
 		"url": "'$AVATAR'"
