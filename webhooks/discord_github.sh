@@ -31,7 +31,7 @@ WEBHOOK_DATA='{
 		"icon_url": "https://i.imgur.com/Z3lo7tA.png"
 	},
 	"title": "'$STATUS' - '$COMMIT_TITLE'",
-	"description": "'$COMMIT_DESCRIPTION'",
+	"description": "'$COMMIT_DESCRIPTION'":0:2047,
   "footer": {
     "text": "'$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$WEBHOOK_FOOTER')",
     "url": "'$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'/actions/runs/'$GITHUB_RUN_ID'"
