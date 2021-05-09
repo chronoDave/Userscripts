@@ -25,29 +25,29 @@ COMMIT_DESCRIPTION="$(git log -1 --pretty=%b)"
 
 WEBHOOK_DATA='{
   "embeds": [{
-	"author": {
-		"name": "'$GITHUB_REPOSITORY'",
-		"url": "'$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'",
-		"icon_url": "https://i.imgur.com/Z3lo7tA.png"
-	},
-	"title": "'$STATUS' - '$COMMIT_TITLE'",
-	"description": "'$COMMIT_DESCRIPTION'":0:2047,
-  "footer": {
-    "text": "'$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$WEBHOOK_FOOTER')",
-    "url": "'$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'/actions/runs/'$GITHUB_RUN_ID'"
-  },
-	"thumbnail": {
-		"url": "'$AVATAR'"
-	},
-	"fields": [{
-		"name": "Author",
-		"value": "[`'$GITHUB_ACTOR'`]('$GITHUB_SERVER_URL'/'$GITHUB_ACTOR')",
-		"inline": true
-	}, {
-		"name": "Commit",
-		"value": "[`'${GITHUB_SHA:0:7}'`]('$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'/commit/'$GITHUB_SHA')",
-		"inline": true
-	}],
+    "author": {
+      "name": "'$GITHUB_REPOSITORY'",
+      "url": "'$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'",
+      "icon_url": "https://i.imgur.com/Z3lo7tA.png"
+    },
+    "title": "'$STATUS' - '$COMMIT_TITLE'",
+    "description": "'$COMMIT_DESCRIPTION'":0:2047,
+    "footer": {
+      "text": "'$GITHUB_WORKFLOW' #'$GITHUB_RUN_NUMBER' ('$WEBHOOK_FOOTER')",
+      "url": "'$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'/actions/runs/'$GITHUB_RUN_ID'"
+    },
+    "thumbnail": {
+      "url": "'$AVATAR'"
+    },
+    "fields": [{
+      "name": "Author",
+      "value": "[`'$GITHUB_ACTOR'`]('$GITHUB_SERVER_URL'/'$GITHUB_ACTOR')",
+      "inline": true
+    }, {
+      "name": "Commit",
+      "value": "[`'${GITHUB_SHA:0:7}'`]('$GITHUB_SERVER_URL'/'$GITHUB_REPOSITORY'/commit/'$GITHUB_SHA')",
+      "inline": true
+    }],
     "color": '$EMBED_COLOR',
     "timestamp": "'$(date --utc +%FT%TZ)'"
   }]
