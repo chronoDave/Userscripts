@@ -1,0 +1,19 @@
+{
+  "ReactTsxFunctionalComponent": {
+    "prefix": "rsx",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export interface ${1:Name}Props {",
+      "\tchildren?: React.ReactNode",
+      "}",
+      "",
+      "export const ${1:Name} = ({ children }: ${1:Name}Props) => (",
+      "\t<div>",
+      "\t\t{children}",
+      "\t</div>",
+      ");",
+      ""
+    ]
+  }
+}

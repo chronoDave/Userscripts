@@ -1,0 +1,22 @@
+{
+  "MithrilTsxComponent": {
+    "prefix": "tsx",
+    "body": [
+      "import m from 'mithril';",
+      "import { MithrilTsxComponent } from 'mithril-tsx-component';",
+      "",
+      "export interface I${1:Name} {}",
+      "",
+      "export class ${1:Name} extends MithrilTsxComponent<I${1:Name}> {",
+      "  view() {",
+      "    return (",
+      "      <div>",
+      "        ${1:Name}",
+      "      </div>",
+      "    );",
+      "  }",
+      "}",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "MithrilFunctionalComponent": {
+    "prefix": "msx",
+    "body": [
+      "import m from 'mithril';",
+      "",
+      "const ${1:Name} = {",
+      "\tview: () => (",
+      "\t\t<div>${1:Name}</div>",
+      "\t)",
+      "};",
+      "",
+      "export default ${1:Name};"
+    ]
+  }
+}
