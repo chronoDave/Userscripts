@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+	:root {
+		--panel-header-background: white;
+	}
+
+	#app > div > div {
+		flex-direction: column;
+		min-width: unset;
+	}
+	
+	header[data-testid="chatlist-header"] {
+		display: none;
+	}
+
+	#side > header {
+		display: none;
+	}
+
+	#main > header {
+		border-top: 1px solid var(--border-panel);
+		box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+		0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+		0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	}
+
+	#main > div[data-asset-chat-background-dark] {
+		opacity: 1 !important;
+		background: url('https://i.imgur.com/eyCuBhM.jpeg');
+		background-position: center;
+		background-size: cover;
+	}
+	
+	#main > footer {
+		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	}
+
+	/* Contact container */
+	.ldL67._2i3T7 {
+		flex: unset;
+		max-height: 270px;
+	}
+
+	/* Message container */
+	.ldL67 _3sh5K {
+		flex: unset;
+	}
+}
